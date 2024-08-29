@@ -1,0 +1,222 @@
+{
+	"info": {
+		"_postman_id": "1834c317-4c12-4cf3-82c1-93978d36bb22",
+		"name": "API Servicios web diagnóstico",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31312998"
+	},
+	"item": [
+		{
+			"name": "CRUD",
+			"item": [
+				{
+					"name": "obtenerTareas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/tareas/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"tareas",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerTarea",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/tareas/SCC-1014",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"tareas",
+								"SCC-1014"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "agregarTarea",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"titulo\": \"Mi nueva tarea\",\r\n    \"cuerpo\": \"No\",\r\n    \"completado\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/tareas/SCC-1014",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"tareas",
+								"SCC-1014"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ActualizarTarea",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"titulo\": \"Mi nueva tarea\",\r\n    \"cuerpo\": \"Actualización de los datos\",\r\n    \"completado\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/tareas/SCC-1014",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"tareas",
+								"SCC-1014"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EliminarTarea",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/tareas/SCC-1014",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"tareas",
+								"SCC-1014"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Estadísticas",
+			"item": [
+				{
+					"name": "q1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/tareas/analisis/q1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"tareas",
+								"analisis",
+								"q1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "q2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/tareas/analisis/q2",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"tareas",
+								"analisis",
+								"q2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "q3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/tareas/analisis/q3",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"tareas",
+								"analisis",
+								"q3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "q4",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/tareas/analisis/q4",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"tareas",
+								"analisis",
+								"q4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
